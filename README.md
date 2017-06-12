@@ -8,7 +8,9 @@ where I got out ahead of Dave Thomas or had an Opinion to share.
 The following should give you a short table of issue numbers, dates and titles
 for github issues on the elixir language project.
 
- mix run -e 'Issues.GithubIssues.fetch(["elixir-lang", "elixir", 4])'
+```
+$ mix run -e 'Issues.GithubIssues.fetch(["elixir-lang", "elixir", 4])'
+```
  
 or `iex -S mix` in the project and run the above directly from IEx. Finally,
 you can compile the escript version with `mix escript` build and run it from
