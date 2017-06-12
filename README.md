@@ -1,19 +1,29 @@
 # Issues
 
-**TODO: Add description**
+The GitHub Issues project from Programming Elixir, with additions/enhancements
+where I got out ahead of Dave Thomas or had an Opinion to share.
+
+## Example 
+
+The following should give you a short table of issue numbers, dates and titles
+for github issues on the elixir language project.
+
+ mix run -e 'Issues.GithubIssues.fetch(["elixir-lang", "elixir"])'
+ 
+or `iex -S mix` in the project and run the above directly from IEx. That's
+really all there is to it. 
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `issues` to your list of dependencies in `mix.exs`:
+The package can be installed by adding `issues` to your list of dependencies in
+`mix.exs` thusly:
 
 ```elixir
 def deps do
-  [{:issues, "~> 0.1.0"}]
+  [{:issues, github: "jdacronym/issues"}]
 end
 ```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
 be found at [https://hexdocs.pm/issues](https://hexdocs.pm/issues).
-
